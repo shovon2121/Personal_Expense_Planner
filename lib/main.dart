@@ -1,4 +1,4 @@
-//20 styling container
+//27 styling container
 import 'package:Expense_Planner_App/widgets/new_transaction.dart';
 import 'package:Expense_Planner_App/widgets/transaction_list.dart';
 import 'package:Expense_Planner_App/widgets/user_transaction.dart';
@@ -29,20 +29,21 @@ class MyHomePage extends StatelessWidget {
         appBar: AppBar(
           title: Text("Flutterrr"),
         ),
-        body: Container(
-          child: Column(
-              //mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: <Widget>[
-                ///////////////////Chart////////////////////////
-                Card(
-                  child: Container(
-                    width: 100,
-                    child: Text("Chart"),
+        body:Container(
+            child: Column(
+                //mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  ///////////////////Chart////////////////////////
+                  Card(
+                    child: Container(
+                      width: 100,
+                      child: Text("Chart"),
+                    ),
                   ),
-                ),
-                UserTransactions()
+                  UserTransactions()
 
-              ]),
-        ));
+                ]),
+          ),
+        );
   }
 }

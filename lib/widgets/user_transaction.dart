@@ -28,7 +28,7 @@ class _UserTransactionsState extends State<UserTransactions> {
     return Column(
       children: <Widget> [
         //////////////////INPUT///////////
-        NewTransaction(),
+        NewTransaction(_addNewTransaction),
     ///////////////List of TX///////////////////////
         TransactionList(_userTransactions),
       ]
